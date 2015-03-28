@@ -1,0 +1,264 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, button{
+  font-family: 'Helvetica Neue', arial, sans-serif;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+.controls {
+    background: none repeat scroll 0 0 #fff;
+    color: #eee;
+}
+.button {
+    background: none repeat scroll 0 0 #f5a01b;
+    border: 0 none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    height: 28px;
+    margin: 3px;
+    padding-top: 6px;
+    text-align: center;
+    width: 34px;
+}
+label {
+    font-weight: 300;
+    margin: 0 0.4em 0 0;
+}
+.button.active {
+    background: none repeat scroll 0 0 #313131;
+}
+.button:focus {
+    outline: 0 none;
+}
+.button + label {
+    margin-left: 1em;
+}
+
+
+
+button {
+    background: none repeat scroll 0 0 #f5a01b;
+    border: 0 none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    height: 28px;
+    margin: 3px;
+    text-align: center;
+    width: 146px;
+}
+
+button.active {
+    background: none repeat scroll 0 0 #313131;
+}
+button:focus {
+    outline: 0 none;
+}
+button + label {
+    margin-left: 1em;
+}
+.container{
+  padding: 2px 2px 0;
+  text-align: justify;
+  font-size: 0.1px;
+  -webkit-backface-visibility: hidden;
+}
+
+.container:after{
+  content: '';
+  display: inline-block;
+  margin:0 6px 6px 6px;
+}
+
+.container .mix,
+.container .gap{
+  display: inline-block;
+
+}
+
+.container .mix{
+  text-align: left;
+  margin-bottom: 2px;
+  display: none;
+  
+}
+
+.container .mix.category-1{
+  border-top: 2px solid limegreen;
+}
+
+.container .mix.category-2{
+  border-top: 2px solid yellow;
+}
+
+.container .mix:after{
+content: attr(data-myorder);
+background: rgba(17, 17, 17, 0.6);
+bottom: 42px;
+color: #FFF;
+display: block;
+font-size: 16px;
+height: 24px;
+line-height: 24px;
+margin: 0;
+overflow: hidden;
+padding: 0 10px;
+position: relative;
+text-overflow: ellipsis;
+letter-spacing: 0px;
+text-align: center;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+white-space: nowrap;
+width: 130px;
+z-index: 100;
+margin-left: 12px;
+}
+
+.container .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 40%;
+}
+
+@media all and (min-width: 420px){
+  .container .mix,
+  .container .gap{
+
+  }
+}
+
+@media all and (min-width: 640px){
+  .container .mix,
+  .container .gap{
+
+  }
+}
+
+.pager-list {
+margin-top: 13px;
+margin-bottom: 20px;
+margin-left: 10px;
+}
+.page-number {
+    background: none repeat scroll 0 0 #f5a01b;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 7px 15px;
+}
+.page-prev {
+    background: none repeat scroll 0 0 #f5a01b;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 15px;
+}
+.page-next {
+    background: none repeat scroll 0 0 #f5a01b;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 7px 15px;
+}
+.page-number:hover {
+    background: none repeat scroll 0 0 #313131;
+}
+.page-number.active {
+    background: none repeat scroll 0 0 #313131;
+}
+
+
+.buscador_listagem {
+background: none repeat scroll 0 0 #313131;
+margin-top: -30px;
+width: 182px;
+padding: 4px;
+margin-left: 520px;
+position: absolute;
+border-radius:4px;
+}
+
+
+
+
+.anime_item {
+margin: 10px 5px;
+padding: 5px;
+position: relative;
+width: 158px;
+float: left;
+}
+.box {
+background: #FFFFFF;
+border: 1px solid #c7c7c7;
+display: block;
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+border-radius: 4px;
+height: 242px;
+width: 164px;
+
+}
+.anime_title{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 2px 4px;
+	background: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	font-size: 12px;
+	z-index: 5;
+	text-align: center;
+	font-family: 'Signika';
+  font-style: normal;
+  font-weight: 300;
+}
+.anime_title a:link{
+	color:#fff;
+	text-decoration:none;
+}
+.anime_title a:visited{
+	color:#fff;
+	text-decoration:none;
+}
+.anime_title a:hover{
+	color:#C60;
+	text-decoration:none;
+}
+
+
+.screenim img{
+float: left;
+width:154px;
+height:228px;
+}
+
+
+.thumb_anime {
+width: 152px;
+position: relative;
+height: 230px;
+overflow: hidden;
+border: 2px solid #000;
+}
+
+
+label {
+font-weight: 300;
+margin: 0 0.4em 0 0;
+color:#C60;
+}
